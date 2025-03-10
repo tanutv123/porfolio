@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
+import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,9 +9,11 @@ export const Contact = () => {
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     emailjs
       .sendForm(
         "service_q1p1zlw",
@@ -21,6 +24,7 @@ export const Contact = () => {
       .then((result) => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
+        setLoading(false);
       })
       .catch(() => alert("Oops! Something went wrong. Please try again."));
   };
@@ -84,9 +88,10 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+              disabled={loading}
+              className="w-full  bg-blue-500 text-white cursor-pointer py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] disabled:cursor-not-allowed"
             >
-              Send Message
+              {loading ? <HourglassEmptyIcon className={'animate-spin'}/> : "Send Message"}
             </button>
           </form>
         </div>

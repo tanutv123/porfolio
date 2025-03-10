@@ -39,7 +39,7 @@ export const Projects = () => {
 
               <div className="flex justify-between items-center">
                 <button
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4 cursor-pointer"
                   type="button"
                   onClick={() => setReactOpen(true)}
                 >
@@ -79,7 +79,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <button
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4 cursor-pointer"
                   onClick={() => setAngularOpen(true)}
                 >
                   View Project →
