@@ -72,6 +72,9 @@ export const About = () => {
                   2022-2025(expected)
                 </li>
                 <li>
+                  GPA: 3.4/4.0
+                </li>
+                <li>
                   Relevant Coursework: Data Structures, Web Development, Networking...
                 </li>
               </ul>
