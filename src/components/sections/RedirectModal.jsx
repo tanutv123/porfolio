@@ -42,7 +42,7 @@ export default function RedirectModal({ open, setOpen, link, imageLink }) {
 
                     </Typography>
                     <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 2 }}>
-                        <Button onClick={handleClose} sx={{ mt: 2 }} variant="outlined">
+                        <Button onClick={handleClose} sx={{ mt: 2, border: 2 }} variant="outlined" className={'border-2 border-blue-600'}>
                             <a href={link} target="_blank" rel="noopener noreferrer">Go to website</a>
                         </Button>
                     </Box>
