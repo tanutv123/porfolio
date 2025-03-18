@@ -77,6 +77,9 @@ export const About = () => {
                 <li>
                   Relevant Coursework: Data Structures, Web Development, Networking...
                 </li>
+                <li>
+                  <strong>TOEIC</strong>: 970/990
+                </li>
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
