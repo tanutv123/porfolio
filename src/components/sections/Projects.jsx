@@ -16,11 +16,11 @@ export const Projects = () => {
             {" "}
             Featured Fullstack Projects
           </h2>
-          <h3 className="text-xl font-bold mb-8 bg-gradient-to-r from-gray-500 to-gray-400 bg-clip-text text-transparent text-center">
-            {" "}
-            These projects might not have an eye-catching design but I am practicing my design skills constantly.
-            You can scroll down to see projects that help me improve my design skills.
-          </h3>
+          {/*<h3 className="text-xl font-bold mb-8 bg-gradient-to-r from-gray-500 to-gray-400 bg-clip-text text-transparent text-center">*/}
+          {/*  {" "}*/}
+          {/*  These projects might not have an eye-catching design but I am practicing my design skills constantly.*/}
+          {/*  You can scroll down to see projects that help me improve my design skills.*/}
+          {/*</h3>*/}
           <RedirectModal open={reactOpen} setOpen={setReactOpen} link={'http://ec2-54-153-171-0.ap-southeast-2.compute.amazonaws.com:8080/'} imageLink={'/instruction.png'} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
